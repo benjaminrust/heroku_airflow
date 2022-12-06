@@ -12,7 +12,7 @@ You will be prompted for a new Fernet key, which can be generated thusly:
 After deployment a login user will need to be created.  This can be done using the `create_user` command through Heroku bash ([documentation](https://airflow.apache.org/cli.html#create_user))
     
     heroku run bash
-    airflow create_user -u <username> -p <password> -r <Role> -f <FirstName> -l <LastName> -e <Email>
+    airflow user create --username <username> --firstname <first_name> --lastname <last_name> --role <Admin> --email <admin@example.com>
     
 
 ### Manual Deployment
